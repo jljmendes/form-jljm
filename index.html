@@ -18,15 +18,15 @@
             <form method="POST" action="cadastro.php" class="jmendes">
                 <label>
                     Seu nome:<br/>
-                    <input type="text" name="name" data-rules="required"/>
+                    <input type="text" name="name" data-rules="required|mim=2"/>
                 </label>
                 <label>
                     Seu email:<br/>
-                    <input type="text" name="email" data-rules="required"/>
+                    <input type="text" name="email" data-rules="required|email"/>
                 </label>
                 <label>
                     Sua senha:<br/>
-                    <input type="password" name="password" />
+                    <input type="password" name="password" data-rules="min=4" />
                 </label>
                 <label>
                     <input type="submit" value="Cadastrar" />
